@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: lightblue;">
+    <div class="form-container">
+        <h2>Contact Form</h2>
+        <label for="name">Name:</label>
+        <div class="textbox1">
+            <input type="text" id="name" placeholder="Enter Your Name">
+            <span id="name-error" class="error-message"></span>
+        </div>
+         <label for="mail">Email:</label>
+        <div class="textbox2">
+            <input type="text" id="email" placeholder="Enter Your Email">
+            <span id="email-error" class="error-message"></span>
+        </div>
+        <label for="message">Message:</label>
+        <div class="textbox3">
+            <textarea id="msg" placeholder="Enter Message" rows="5"></textarea>
+             <span id="msg-error" class="error-message"></span>
+        </div>
+        <div class="btn">
+            <input type="button" id="btn1" value="Submit" onclick="validateForm()">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
